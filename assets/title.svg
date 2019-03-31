@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="91" height="71" viewBox="0 0 91 71">
+    <g fill="#FFF" fill-rule="evenodd">
+        <g font-family="LucidaGrande-Bold, Lucida Grande" font-size="65" font-weight="bold">
+            <text transform="translate(-2 -14)">
+                <tspan x=".055" y="63">ω</tspan>
+            </text>
+            <text transform="translate(-2 -14)">
+                <tspan x="55.061" y="63">3</tspan>
+            </text>
+        </g>
+        <text font-family="HiraginoSans-W6, Hiragino Sans" font-size="12.5" font-weight="500" transform="translate(-2 -14)">
+            <tspan x="11.5" y="83.5">おめがすりー</tspan>
+        </text>
+    </g>
+</svg>
