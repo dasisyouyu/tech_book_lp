@@ -105,7 +105,7 @@
     </vs-row>
 
     <vs-row vs-w="12">
-      <vs-col vs-w="12" vs-type="flex" vs-align="flex-end" vs-justify="flex-end">
+      <vs-col vs-w="12" vs-type="flex" vs-justify="flex-end">
         <img class="bottom_image" src="~assets/bottom_image.svg" alt="top_wave">
       </vs-col>
 
@@ -188,9 +188,10 @@
       flex-direction: column;
       z-index: 2;
       margin-bottom: 15%;
+      position: relative;
       img {
         position: relative;
-        height: 500px;
+        width: 100%;
       }
       .chip {
         position: absolute;
@@ -203,11 +204,11 @@
   }
 
   .bottom_image {
-    width: 100%;
+    width: 100vw;
   }
 
   .bottom_image_two {
-    width: 100%;
+    width: 100vw;
     background-color: #262f56;
     height: 40px;
     position: absolute;
