@@ -56,6 +56,48 @@
       <vs-col vs-w="12" vs-type="flex" vs-justify="center">
         <h1>GALLERY</h1>
       </vs-col>
+
+      <vs-col vs-w="12" vs-type="flex" vs-justify="center">
+        <div class="download_image">
+          <img src="~assets/spring.png" alt="spring">
+          <vs-chip class="chip" color="danger">spring</vs-chip>
+          <a :href="require('~/assets/spring.png')" download>
+            <vs-button size="large" color="primary">DOWNLOAD</vs-button>
+          </a>
+        </div>
+
+        <div class="download_image">
+          <img src="~assets/spring.png" alt="spring">
+          <vs-chip class="chip" color="danger">spring</vs-chip>
+          <a :href="require('~/assets/spring.png')" download>
+            <vs-button size="large" color="primary">DOWNLOAD</vs-button>
+          </a>
+        </div>
+
+        <div class="download_image">
+          <img src="~assets/spring.png" alt="spring">
+          <vs-chip class="chip" color="danger">spring</vs-chip>
+          <a :href="require('~/assets/spring.png')" download>
+            <vs-button size="large" color="primary">DOWNLOAD</vs-button>
+          </a>
+        </div>
+
+        <div class="download_image">
+          <img src="~assets/spring.png" alt="spring">
+          <vs-chip class="chip" color="danger">spring</vs-chip>
+          <a :href="require('~/assets/spring.png')" download>
+            <vs-button size="large" color="primary">DOWNLOAD</vs-button>
+          </a>
+        </div>
+
+        <div class="download_image">
+          <img src="~assets/spring.png" alt="spring">
+          <vs-chip class="chip" color="danger">spring</vs-chip>
+          <a :href="require('~/assets/spring.png')" download>
+            <vs-button size="large" color="primary">DOWNLOAD</vs-button>
+          </a>
+        </div>
+      </vs-col>
     </vs-row>
   </section>
 </template>
@@ -124,6 +166,23 @@
   .gallery {
     h1 {
       color: #ffffff;
+      font-size: 2rem;
+      margin-top: 5%;
+    }
+    .download_image {
+      display: flex;
+      flex-direction: column;
+      img {
+        position: relative;
+      }
+      .chip {
+        position: absolute;
+        left: -5%;
+        top: 12%;
+      }
+      a {
+        text-align: center;
+      }
     }
   }
 }

@@ -1,7 +1,7 @@
 {
   "name": "tech_book_lp",
-  "version": "1.0.0",
-  "description": "My kickass Nuxt.js project",
+  "version": "1.0.1",
+  "description": "技術書典サークル　ω3のサイト",
   "author": "dasisyouyu",
   "private": true,
   "scripts": {
