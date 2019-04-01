@@ -57,6 +57,14 @@
         <h1>GALLERY</h1>
       </vs-col>
 
+      <vs-col class="fish_two">
+        <img v-parallax="0.3" src="~assets/fish_two.svg" alt="fish">
+      </vs-col>
+
+      <vs-col class="panrisu">
+        <img v-parallax="0.3" src="~assets/panrisu.svg" alt="fish">
+      </vs-col>
+
       <vs-col vs-w="12" vs-type="flex" vs-justify="center">
         <div class="download_image">
           <img src="~assets/spring.png" alt="spring">
@@ -67,36 +75,42 @@
         </div>
 
         <div class="download_image">
-          <img src="~assets/spring.png" alt="spring">
-          <vs-chip class="chip" color="danger">spring</vs-chip>
-          <a :href="require('~/assets/spring.png')" download>
+          <img src="~assets/autumn.png" alt="autumn">
+          <vs-chip class="chip" color="danger">autumn</vs-chip>
+          <a :href="require('~/assets/autumn.png')" download>
             <vs-button size="large" color="primary">DOWNLOAD</vs-button>
           </a>
         </div>
 
         <div class="download_image">
-          <img src="~assets/spring.png" alt="spring">
-          <vs-chip class="chip" color="danger">spring</vs-chip>
-          <a :href="require('~/assets/spring.png')" download>
+          <img src="~assets/summer.png" alt="summer">
+          <vs-chip class="chip" color="danger">summer</vs-chip>
+          <a :href="require('~/assets/summer.png')" download>
             <vs-button size="large" color="primary">DOWNLOAD</vs-button>
           </a>
         </div>
 
         <div class="download_image">
-          <img src="~assets/spring.png" alt="spring">
-          <vs-chip class="chip" color="danger">spring</vs-chip>
-          <a :href="require('~/assets/spring.png')" download>
+          <img src="~assets/winter.png" alt="winter">
+          <vs-chip class="chip" color="danger">winter</vs-chip>
+          <a :href="require('~/assets/winter.png')" download>
             <vs-button size="large" color="primary">DOWNLOAD</vs-button>
           </a>
         </div>
+      </vs-col>
 
-        <div class="download_image">
-          <img src="~assets/spring.png" alt="spring">
-          <vs-chip class="chip" color="danger">spring</vs-chip>
-          <a :href="require('~/assets/spring.png')" download>
-            <vs-button size="large" color="primary">DOWNLOAD</vs-button>
-          </a>
-        </div>
+      <vs-col class="big_fish">
+        <img v-parallax="0.3" src="~assets/big_fish.svg" alt="fish">
+      </vs-col>
+    </vs-row>
+
+    <vs-row vs-w="12">
+      <vs-col vs-w="12" vs-type="flex" vs-align="flex-end" vs-justify="flex-end">
+        <img class="bottom_image" src="~assets/bottom_image.svg" alt="top_wave">
+      </vs-col>
+
+      <vs-col vs-w="12" vs-type="flex" vs-align="flex-end" vs-justify="flex-end">
+        <div class="bottom_image_two"></div>
       </vs-col>
     </vs-row>
   </section>
@@ -172,17 +186,57 @@
     .download_image {
       display: flex;
       flex-direction: column;
+      z-index: 2;
+      margin-bottom: 15%;
       img {
         position: relative;
+        height: 500px;
       }
       .chip {
         position: absolute;
-        left: -5%;
-        top: 12%;
+        margin-top: 50px;
       }
       a {
         text-align: center;
       }
+    }
+  }
+
+  .bottom_image {
+    width: 100%;
+  }
+
+  .bottom_image_two {
+    width: 100%;
+    background-color: #262f56;
+    height: 40px;
+    position: absolute;
+  }
+
+  .fish_two {
+    position: absolute;
+    img {
+      margin-left: 85%;
+      width: 12%;
+      z-index: 1;
+    }
+  }
+
+  .big_fish {
+    position: absolute;
+    img {
+      margin-left: 25%;
+      margin-top: 40%;
+      width: 17%;
+      z-index: 1;
+    }
+  }
+
+  .panrisu {
+    position: absolute;
+    img {
+      width: 16%;
+      z-index: 1;
     }
   }
 }
